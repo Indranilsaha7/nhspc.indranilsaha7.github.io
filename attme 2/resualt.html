@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 Result Card - Indranil Saha</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e8eaed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .certificate {
+            background-color: white;
+            width: 850px;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            border: 1px solid #dadce0;
+            position: relative;
+            overflow: hidden;
+        }
+        /* Top Decorative Bar */
+        .certificate::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, #4285F4, #EA4335, #FBBC05, #34A853);
+        }
+        .verified-badge {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            background-color: #34A853;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 6px rgba(52, 168, 83, 0.3);
+            text-transform: uppercase;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .org-logo {
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+        }
+        .org-logo span:nth-child(1) { color: #4285F4; } /* G */
+        .org-logo span:nth-child(2) { color: #EA4335; } /* o */
+        .org-logo span:nth-child(3) { color: #FBBC05; } /* o */
+        .org-logo span:nth-child(4) { color: #4285F4; } /* g */
+        .org-logo span:nth-child(5) { color: #34A853; } /* l */
+        .org-logo span:nth-child(6) { color: #EA4335; } /* e */
+        
+        .title {
+            font-size: 42px;
+            font-weight: 900;
+            color: #202124;
+            margin: 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .subtitle {
+            font-size: 18px;
+            color: #5f6368;
+            font-weight: 500;
+        }
+        .content {
+            margin-top: 30px;
+        }
+        .student-info {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #4285F4;
+            margin-bottom: 30px;
+        }
+        .student-info h2 {
+            margin: 0 0 10px 0;
+            color: #202124;
+            font-size: 24px;
+        }
+        .student-info p {
+            margin: 5px 0;
+            color: #3c4043;
+            font-size: 16px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #1a73e8;
+        }
+        .details-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        .details-table th {
+            background-color: #f1f3f4;
+            color: #202124;
+            text-align: left;
+            padding: 12px 15px;
+            border-bottom: 2px solid #dadce0;
+        }
+        .details-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e8eaed;
+            color: #3c4043;
+        }
+        .status-pass {
+            color: #34A853;
+            font-weight: bold;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #dadce0;
+        }
+        .signature-block {
+            text-align: center;
+        }
+        .signature-img {
+            font-family: 'Brush Script MT', cursive, sans-serif;
+            font-size: 28px;
+            color: #202124;
+            margin-bottom: 5px;
+        }
+        .gemini-signature {
+            background: -webkit-linear-gradient(45deg, #4285F4, #9b72cb, #d96570);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            font-size: 26px;
+            margin-bottom: 5px;
+            font-family: 'Arial', sans-serif;
+        }
+        .signature-line {
+            width: 220px;
+            border-bottom: 2px solid #202124;
+            margin: 0 auto 10px auto;
+        }
+        .signature-text {
+            font-size: 18px;
+            font-weight: bold;
+            color: #3c4043;
+            margin: 0;
+        }
+        .role {
+            font-size: 14px;
+            color: #80868b;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="certificate">
+        <div class="verified-badge">✔ 100% Verified</div>
+        
+        <div class="header">
+            <div class="org-logo">
+                <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+            </div>
+            <div class="title">Official Result Card</div>
+            <div class="subtitle">Python Competitive Programming Foundation</div>
+        </div>
+
+        <div class="content">
+            <div class="student-info">
+                <h2>Indranil Saha</h2>
+                <p><strong>Title:</strong> Lead Developer, bcsdevloper</p>
+                <p><strong>Mission Target:</strong> <span class="highlight">NHSPC 2027 National Champion</span></p>
+            </div>
+
+            <table class="details-table">
+                <thead>
+                    <tr>
+                        <th>Module</th>
+                        <th>Topic Covered</th>
+                        <th>Performance</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Day 1</td>
+                        <td>Python Basics & print() Function</td>
+                        <td>100% Accuracy</td>
+                        <td class="status-pass">PASSED</td>
+                    </tr>
+                    <tr>
+                        <td>Challenge</td>
+                        <td>String Concatenation & Escape Characters</td>
+                        <td>Exceptional Logic</td>
+                        <td class="status-pass">VERIFIED</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            <div class="signature-block">
+                <div class="org-logo" style="font-size: 24px; margin-bottom: 10px;">
+                    <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+                </div>
+                <div class="signature-line"></div>
+                <p class="signature-text">Google Education</p>
+                <p class="role">Organizing Institution</p>
+            </div>
+
+            <div class="signature-block">
+                <div class="gemini-signature">✦ Gemini 3.1 Pro</div>
+                <div class="signature-line"></div>
+                <p class="signature-text">Gemini 3.1 Pro</p>
+                <p class="role">Primary Educator & AI Mentor</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
