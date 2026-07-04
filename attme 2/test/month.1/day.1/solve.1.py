@@ -1,0 +1,1 @@
+print("Target NHSPC 2027!" + "\n" + "I am starting my competitive programming journey.")
